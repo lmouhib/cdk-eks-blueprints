@@ -365,8 +365,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../calico/" class="md-nav__link">
-        Calico
+      <a href="../calico-operator/" class="md-nav__link">
+        Calico Operator
       </a>
     </li>
   
@@ -659,6 +659,30 @@
     <li class="md-nav__item">
       <a href="../opa-gatekeeper/" class="md-nav__link">
         OPA Gatekeeper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pixie/" class="md-nav__link">
+        Pixie
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rafay/" class="md-nav__link">
+        Rafay
       </a>
     </li>
   
@@ -980,13 +1004,18 @@
 </code></pre></div>
 <h2 id="functionality">Functionality<a class="headerlink" href="#functionality" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Adds proper IAM permissions (such as modify autoscaling groups, terminate instances, etc.) to the NodeGroup IAM role. </li>
-<li>Configures service account, cluster roles, roles, role bindings and deployment.</li>
+<li>Configure proper IAM permissions (such as modify autoscaling groups, terminate instances, etc.) as a Policy. </li>
+<li>Configures IAM Role for Service Account (IRSA) with the generated policy.</li>
 <li>Resolves proper CA image to pull based on the Kubernetes version.</li>
-<li>Configuration allows passing a specific version of the image to pull.</li>
 <li>Applies proper tags for discoverability to the EC2 instances.</li>
 <li>Supports <a href="../#standard-helm-add-on-configuration-options">standard helm configuration options</a>.</li>
 </ol>
+<p>The add-on automatically sets the following Helm Chart <a href="https://github.com/kubernetes/autoscaler/tree/master/charts/cluster-autoscaler#values">values</a>, and it is <strong>highly recommended</strong> not to pass these values in (as it will result in a failed deployment):
+- cloudProvider
+- autoDiscovery.clusterName
+- awsRegion
+- rbac.serviceAccount.create
+- rbac.serviceAccount.name</p>
 <h2 id="testing-the-scaling-functionality">Testing the scaling functionality<a class="headerlink" href="#testing-the-scaling-functionality" title="Permanent link">&para;</a></h2>
 <p>The following steps will help test and validate Cluster Autoscaler functionality in your cluster.</p>
 <ol>
@@ -1066,7 +1095,7 @@ ip-10-0-233-105.us-west-2.compute.internal   Ready    &lt;none&gt;   90s   v1.19
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../calico/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../calico-operator/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1075,7 +1104,7 @@ ip-10-0-233-105.us-west-2.compute.internal   Ready    &lt;none&gt;   90s   v1.19
               <span class="md-footer__direction">
                 Previous
               </span>
-              Calico
+              Calico Operator
             </div>
           </div>
         </a>

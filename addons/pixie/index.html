@@ -14,7 +14,7 @@
     
     
       
-        <title>Pixie Addon - Amazon EKS Blueprints Quick Start</title>
+        <title>Pixie - Amazon EKS Blueprints Quick Start</title>
       
     
     
@@ -89,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pixie Addon
+              Pixie
             
           </span>
         </div>
@@ -268,12 +268,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       <label class="md-nav__link" for="__nav_6">
         AddOns
@@ -363,8 +365,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../calico/" class="md-nav__link">
-        Calico
+      <a href="../calico-operator/" class="md-nav__link">
+        Calico Operator
       </a>
     </li>
   
@@ -569,6 +571,194 @@
     <li class="md-nav__item">
       <a href="../opa-gatekeeper/" class="md-nav__link">
         OPA Gatekeeper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Pixie
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Pixie
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisite" class="md-nav__link">
+    Prerequisite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-deploy-key" class="md-nav__link">
+    Using deploy key:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-deploy-key-stored-in-secrets-manager" class="md-nav__link">
+    Using deploy key stored in Secrets Manager:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addon-options-props" class="md-nav__link">
+    Addon Options (props)
+  </a>
+  
+    <nav class="md-nav" aria-label="Addon Options (props)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploykey-string-optional" class="md-nav__link">
+    deployKey: string (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploykeysecretname-string-optional" class="md-nav__link">
+    deployKeySecretName: string (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namespace-string-optional" class="md-nav__link">
+    namespace?: string (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudaddr-string-optional" class="md-nav__link">
+    cloudAddr?: string (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devcloudnamespace-string-optional" class="md-nav__link">
+    devCloudNamespace?: string (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clustername-string-optional" class="md-nav__link">
+    clusterName?: string (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useetcdoperator-boolean-optional" class="md-nav__link">
+    useEtcdOperator?: boolean (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pemmemorylimit-string-optional" class="md-nav__link">
+    pemMemoryLimit?: string (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataaccess-fullrestrictedpiirestricted-optional" class="md-nav__link">
+    dataAccess?: "Full"|"Restricted"|"PIIRestricted" (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patches-key-string-string-optional" class="md-nav__link">
+    patches?: [key: string]: string (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-string-optional" class="md-nav__link">
+    version?: string (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repository-string-release-string-chart-string-optional" class="md-nav__link">
+    repository?: string, release?: string, chart?: string (optional)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rafay/" class="md-nav__link">
+        Rafay
       </a>
     </li>
   
@@ -1067,6 +1257,39 @@ new blueprints.EksBlueprint(
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../opa-gatekeeper/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              OPA Gatekeeper
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../rafay/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Rafay
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
