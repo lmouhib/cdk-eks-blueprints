@@ -359,6 +359,34 @@
   
   
     <li class="md-nav__item">
+      <a href="adot-addon/" class="md-nav__link">
+        ADOT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="amp-addon/" class="md-nav__link">
+        AMP ADOT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="app-mesh/" class="md-nav__link">
         AWS App Mesh
       </a>
@@ -431,6 +459,34 @@
     <li class="md-nav__item">
       <a href="calico-operator/" class="md-nav__link">
         Calico Operator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cert-manager/" class="md-nav__link">
+        Certificate Manager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cloudwatch-adot-addon/" class="md-nav__link">
+        CloudWatch ADOT
       </a>
     </li>
   
@@ -787,6 +843,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xray-adot-addon/" class="md-nav__link">
+        AWS XRay ADOT
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1039,8 +1109,16 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="./adot-addon"><code>AdotAddOn</code></a></td>
+<td>Adds AWS Distro for OpenTelemetry (ADOT) Operator.</td>
+</tr>
+<tr>
+<td><a href="./amp-addon"><code>AmpAdotAddOn</code></a></td>
+<td>Deploys ADOT Collector for Prometheus to remote write metrics from AMP.</td>
+</tr>
+<tr>
 <td><a href="./app-mesh"><code>AppMeshAddOn</code></a></td>
-<td>Adds an AppMesh controller and CRDs (pending validation on the latest version of CDK)</td>
+<td>Adds an AppMesh controller and CRDs.</td>
 </tr>
 <tr>
 <td><a href="./argo-cd"><code>ArgoCDAddOn</code></a></td>
@@ -1059,20 +1137,24 @@
 <td>Provisions Node Termination Handler into your cluster.</td>
 </tr>
 <tr>
-<td><a href="./calico"><code>CalicoAddOn</code></a></td>
-<td>Adds the Calico 1.7.1 CNI/Network policy engine</td>
+<td><a href="./cert-manager"><code>CertManagerAddOn</code></a></td>
+<td>Adds Certificate Manager to your EKS cluster.</td>
+</tr>
+<tr>
+<td><a href="./calico-operator"><code>CalicoOperatorAddOn</code></a></td>
+<td>Adds the Calico CNI/Network policy cluster.</td>
+</tr>
+<tr>
+<td><a href="./cloudwatch-adot-addon"><code>CloudWatchAdotAddOn</code></a></td>
+<td>Adds Cloudwatch exporter based on ADOT operator integrating monitoring with CloudWatch.</td>
 </tr>
 <tr>
 <td><a href="./cluster-autoscaler"><code>ClusterAutoscalerAddOn</code></a></td>
-<td>Adds the standard cluster autoscaler</td>
-</tr>
-<tr>
-<td><a href="./container-insights"><code>ContainerInsightsAddOn</code></a></td>
-<td>Adds Container Insights support integrating monitoring with CloudWatch</td>
+<td>Adds the standard cluster autoscaler.</td>
 </tr>
 <tr>
 <td><a href="coredns/"><code>CoreDnsAddOn</code></a></td>
-<td>Adds CoreDNS Amazon EKS add-on. CoreDNS is a flexible, extensible DNS server that can serve as the Kubernetes cluster DNS</td>
+<td>Adds CoreDNS Amazon EKS add-on. CoreDNS is a flexible, extensible DNS server that can serve as the Kubernetes cluster DNS.</td>
 </tr>
 <tr>
 <td><a href="datadog/"><code>DatadogAddOn</code></a></td>
@@ -1080,31 +1162,31 @@
 </tr>
 <tr>
 <td><a href="https://github.com/dynatrace-oss/dynatrace-eks-blueprints-addon"><code>Dynatrace</code></a></td>
-<td>Adds the <a href="https://www.dynatrace.com/">Dynatrace</a> <a href="https://github.com/Dynatrace/dynatrace-oneagent-operator">OneAgent Operator</a></td>
+<td>Adds the <a href="https://www.dynatrace.com/">Dynatrace</a> <a href="https://github.com/Dynatrace/dynatrace-oneagent-operator">OneAgent Operator</a>.</td>
 </tr>
 <tr>
 <td><a href="ebs-csi-driver/"><code>EbsCsiDriverAddOn</code></a></td>
-<td>Adds EBS CSI Driver Amazon EKS add-on. This driver manages the lifecycle of Amazon EBS volumes for persistent storage</td>
+<td>Adds EBS CSI Driver Amazon EKS add-on. This driver manages the lifecycle of Amazon EBS volumes for persistent storage.</td>
 </tr>
 <tr>
 <td><a href="efs-csi-driver/"><code>EfsCsiDriverAddOn</code></a></td>
-<td>Adds EFS CSI Driver Amazon EKS add-on. This driver manages the lifecycle of Amazon EFS volumes for persistent storage</td>
+<td>Adds EFS CSI Driver Amazon EKS add-on. This driver manages the lifecycle of Amazon EFS volumes for persistent storage.</td>
 </tr>
 <tr>
 <td><a href="./external-dns"><code>ExternalDnsAddOn</code></a></td>
-<td>Adds <a href="https://github.com/kubernetes-sigs/external-dns">External DNS</a> support for AWS to the cluster, integrating with Amazon Route 53</td>
+<td>Adds <a href="https://github.com/kubernetes-sigs/external-dns">External DNS</a> support for AWS to the cluster, integrating with Amazon Route 53.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/keptn-sandbox/keptn-eks-blueprints-addon"><code>Keptn</code></a></td>
-<td><a href="https://keptn.sh/">Keptn</a> Control Plane and Execution Plane AddOn</td>
+<td><a href="https://keptn.sh/">Keptn</a> Control Plane and Execution Plane AddOn.</td>
 </tr>
 <tr>
 <td><a href="kubecost/"><code>KubecostAddOn</code></a></td>
-<td>Adds <a href="https://kubecost.com">Kubecost</a> cost analyzer to the EKS cluster</td>
+<td>Adds <a href="https://kubecost.com">Kubecost</a> cost analyzer to the EKS cluster.</td>
 </tr>
 <tr>
 <td><a href="kubevious/"><code>KubeviousAddOn</code></a></td>
-<td>Adds <a href="https://github.com/kubevious/kubevious">Kubevious</a> open source Kubernetes dashboard to an EKS cluster</td>
+<td>Adds <a href="https://github.com/kubevious/kubevious">Kubevious</a> open source Kubernetes dashboard to an EKS cluster.</td>
 </tr>
 <tr>
 <td><a href="karpenter/"><code>KarpenterAddOn</code></a></td>
@@ -1112,11 +1194,11 @@
 </tr>
 <tr>
 <td><a href="kube-proxy/"><code>KubeProxyAddOn</code></a></td>
-<td>Adds kube-proxy Amazon EKS add-on. Kube-proxy maintains network rules on each Amazon EC2 node</td>
+<td>Adds kube-proxy Amazon EKS add-on. Kube-proxy maintains network rules on each Amazon EC2 node.</td>
 </tr>
 <tr>
 <td><a href="./metrics-server"><code>MetricsServerAddOn</code></a></td>
-<td>Adds metrics server (pre-req for HPA and other monitoring tools)</td>
+<td>Adds metrics server (pre-req for HPA and other monitoring tools).</td>
 </tr>
 <tr>
 <td><a href="newrelic/"><code>NewRelicAddOn</code></a></td>
@@ -1124,11 +1206,11 @@
 </tr>
 <tr>
 <td><a href="nginx/"><code>NginxAddOn</code></a></td>
-<td>Adds NGINX ingress controller</td>
+<td>Adds NGINX ingress controller.</td>
 </tr>
 <tr>
 <td><a href="opa-gatekeeper/"><code>OpaGatekeeperAddOn (Currently Not Supported, In Progress)</code></a></td>
-<td>Adds OPA Gatekeeper</td>
+<td>Adds OPA Gatekeeper.</td>
 </tr>
 <tr>
 <td><a href="pixie/"><code>PixieAddOn</code></a></td>
@@ -1136,27 +1218,31 @@
 </tr>
 <tr>
 <td><a href="secrets-store/"><code>SecretsStoreAddOn</code></a></td>
-<td>Adds AWS Secrets Manager and Config Provider for Secret Store CSI Driver to the EKS Cluster</td>
+<td>Adds AWS Secrets Manager and Config Provider for Secret Store CSI Driver to the EKS Cluster.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/snyk-partners/snyk-monitor-eks-blueprints-addon"><code>Snyk</code></a></td>
-<td>Adds the <a href="https://github.com/snyk/kubernetes-monitor">Snyk Monitor</a> to the EKS Cluster</td>
+<td>Adds the <a href="https://github.com/snyk/kubernetes-monitor">Snyk Monitor</a> to the EKS Cluster.</td>
 </tr>
 <tr>
 <td><a href="ssm-agent/"><code>SSMAgentAddOn</code></a></td>
-<td>Adds <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html">Amazon SSM Agent</a> to worker nodes</td>
+<td>Adds <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html">Amazon SSM Agent</a> to worker nodes.</td>
 </tr>
 <tr>
 <td><a href="vpc-cni/"><code>VpcCniAddOn</code></a></td>
-<td>Adds the Amazon VPC CNI Amazon EKS addon to support native VPC networking for Amazon EKS</td>
+<td>Adds the Amazon VPC CNI Amazon EKS addon to support native VPC networking for Amazon EKS.</td>
 </tr>
 <tr>
 <td><a href="velero/"><code>VeleroAddOn</code></a></td>
-<td>Adds <a href="https://velero.io/">Velero</a> to the EKS Cluster</td>
+<td>Adds <a href="https://velero.io/">Velero</a> to the EKS Cluster.</td>
 </tr>
 <tr>
 <td><a href="./xray"><code>XrayAddOn</code></a></td>
-<td>Adds XRay Daemon to the EKS Cluster</td>
+<td>Adds XRay Daemon to the EKS Cluster.</td>
+</tr>
+<tr>
+<td><a href="./xray-adot-addon"><code>XrayAdotAddOn</code></a></td>
+<td>Deploys ADOT Collector for Xray to receive traces from your workloads.</td>
 </tr>
 </tbody>
 </table>
@@ -1269,13 +1355,13 @@ INFO  Chart secrets-store-csi-driver-1.2.1 is at the latest version.
       
       
         
-        <a href="app-mesh/" class="md-footer__link md-footer__link--next" aria-label="Next: AWS App Mesh" rel="next">
+        <a href="adot-addon/" class="md-footer__link md-footer__link--next" aria-label="Next: ADOT" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              AWS App Mesh
+              ADOT
             </div>
           </div>
           <div class="md-footer__button md-icon">

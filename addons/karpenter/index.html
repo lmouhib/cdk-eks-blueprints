@@ -318,6 +318,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../adot-addon/" class="md-nav__link">
+        ADOT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../amp-addon/" class="md-nav__link">
+        AMP ADOT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../app-mesh/" class="md-nav__link">
         AWS App Mesh
       </a>
@@ -390,6 +418,34 @@
     <li class="md-nav__item">
       <a href="../calico-operator/" class="md-nav__link">
         Calico Operator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cert-manager/" class="md-nav__link">
+        Certificate Manager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloudwatch-adot-addon/" class="md-nav__link">
+        CloudWatch ADOT
       </a>
     </li>
   
@@ -578,6 +634,13 @@
         <li class="md-nav__item">
   <a href="#testing-with-a-sample-deployment" class="md-nav__link">
     Testing with a sample deployment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
   </a>
   
 </li>
@@ -809,6 +872,20 @@
     <li class="md-nav__item">
       <a href="../xray/" class="md-nav__link">
         AWS XRay
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xray-adot-addon/" class="md-nav__link">
+        AWS XRay ADOT
       </a>
     </li>
   
@@ -1064,6 +1141,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1097,12 +1181,7 @@
 </ol>
 <p><strong><em>VPC CNI add-on must be present in add-on array</em></strong> and <strong><em>must be in add-on array before the Karpenter add-on</em></strong> for it to work, as shown in below example. Otherwise will run into error <code>Assertion failed: Missing a dependency for VpcCniAddOn</code>.</p>
 <ol>
-<li>
-<p>There is no support for utilizing both Cluster Autoscaler <strong>and</strong> Karpenter. Therefore, any addons list that has both will result in an error <code>Deploying &lt;name of your stack&gt; failed due to conflicting add-on: ClusterAutoscalerAddOn.</code>.</p>
-</li>
-<li>
-<p>The current add-on supports up to <strong><em>v0.12.1</em></strong>. The latest version introduces a new CRD that is not currently supported.</p>
-</li>
+<li>There is no support for utilizing both Cluster Autoscaler <strong>and</strong> Karpenter. Therefore, any addons list that has both will result in an error <code>Deploying &lt;name of your stack&gt; failed due to conflicting add-on: ClusterAutoscalerAddOn.</code>.</li>
 </ol>
 <h2 id="prerequisite">Prerequisite<a class="headerlink" href="#prerequisite" title="Permanent link">&para;</a></h2>
 <p>(If using Spot), EC2 Spot Service Linked Role should be created. See <a href="https://docs.aws.amazon.com/batch/latest/userguide/spot_fleet_IAM_role.html">here</a> for more details.</p>
@@ -1252,6 +1331,11 @@ blueprints-addon-karpenter-54fd978b89-hclmp   <span class="m">2</span>/2     Run
 <p>or, by looking at the nodes being created:</p>
 <div class="highlight"><pre><span></span><code>kubectl get nodes
 </code></pre></div>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<p>The following are common troubleshooting issues observed when implementing Karpenter:</p>
+<ol>
+<li>For Karpenter version older than <code>0.14.0</code> deployed on Fargate Profiles, <code>values.yaml</code> must be overridden, setting <code>dnsPolicy</code> to <code>Default</code>. Versions after <code>0.14.0</code> has <code>dnsPolicy</code> value set default to <code>Default</code>. This is to ensure CoreDNS is set correctly on Fargate nodes.</li>
+</ol>
 
               
             </article>
