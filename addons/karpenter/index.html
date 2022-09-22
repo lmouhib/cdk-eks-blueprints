@@ -8,9 +8,8 @@
       
       
       
-      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
@@ -18,26 +17,31 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a952b86.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
+      
+
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
+    
     
     
   </head>
@@ -51,7 +55,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -68,16 +71,19 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Amazon EKS Blueprints Quick Start" class="md-header__button md-logo" aria-label="Amazon EKS Blueprints Quick Start" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -99,21 +105,24 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -130,11 +139,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/aws-quickstart/cdk-eks-blueprints/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/aws-quickstart/cdk-eks-blueprints" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     aws-quickstart/cdk-eks-blueprints
@@ -143,11 +151,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -166,18 +177,17 @@
     <a href="../.." title="Amazon EKS Blueprints Quick Start" class="md-nav__button md-logo" aria-label="Amazon EKS Blueprints Quick Start" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
     Amazon EKS Blueprints Quick Start
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/aws-quickstart/cdk-eks-blueprints/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/aws-quickstart/cdk-eks-blueprints" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     aws-quickstart/cdk-eks-blueprints
@@ -277,10 +287,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
-      <label class="md-nav__link" for="__nav_6">
-        AddOns
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          AddOns
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="AddOns" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -289,6 +303,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -299,8 +314,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -311,8 +328,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -323,8 +342,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -335,8 +356,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -347,8 +370,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -359,8 +384,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -371,8 +398,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -383,8 +412,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -395,8 +426,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -407,8 +440,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -419,8 +454,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -431,8 +468,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -443,8 +482,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -455,8 +496,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -467,8 +510,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -479,8 +524,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -491,8 +538,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -503,8 +552,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -515,8 +566,38 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-secrets/" class="md-nav__link">
+        External Secrets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jupyterhub/" class="md-nav__link">
+        JupyterHub
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
     
@@ -540,6 +621,7 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -554,8 +636,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisite" class="md-nav__link">
-    Prerequisite
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
@@ -595,6 +677,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#upgrade-path" class="md-nav__link">
+    Upgrade Path
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -602,8 +691,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -614,8 +705,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -626,8 +719,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -638,8 +733,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -650,8 +747,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -662,8 +761,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -674,8 +775,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -686,8 +789,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -698,8 +803,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -710,8 +817,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -722,8 +831,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -734,8 +845,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -746,8 +859,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -758,8 +873,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -770,8 +887,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -782,8 +901,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -794,8 +915,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -806,6 +929,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -826,10 +950,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Cluster Providers
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Cluster Providers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Cluster Providers" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -838,6 +966,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -848,8 +977,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -860,8 +991,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -872,8 +1005,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -884,8 +1019,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -896,6 +1033,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -916,10 +1054,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
-      <label class="md-nav__link" for="__nav_8">
-        Resource Providers
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Resource Providers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Resource Providers" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
@@ -928,6 +1070,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -938,6 +1081,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -987,6 +1131,7 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1001,8 +1146,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisite" class="md-nav__link">
-    Prerequisite
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
@@ -1042,6 +1187,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#upgrade-path" class="md-nav__link">
+    Upgrade Path
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1050,16 +1202,19 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-                  <a href="https://github.com/aws-quickstart/cdk-eks-blueprints/edit/master/docs/addons/karpenter.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                <h1 id="karpenter-add-on">Karpenter Add-on<a class="headerlink" href="#karpenter-add-on" title="Permanent link">&para;</a></h1>
+                  
+
+  <a href="https://github.com/aws-quickstart/cdk-eks-blueprints/edit/master/docs/addons/karpenter.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="karpenter-add-on">Karpenter Add-on<a class="headerlink" href="#karpenter-add-on" title="Permanent link">&para;</a></h1>
 <p>Karpenter add-on is based on the <a href="https://github.com/aws/karpenter">Karpenter</a> open source node provisioning project. It provides a more efficient and cost-effective way to manage workloads by launching just the right compute resources to handle a cluster's application.</p>
 <p>Karpenter works by:</p>
 <ul>
@@ -1069,50 +1224,55 @@
 <li>Scheduling the pods to run on the new nodes, and</li>
 <li>Removing the nodes when the nodes are no longer needed</li>
 </ul>
-<p><strong><em>IMPORTANT</em></strong>:</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ol>
 <li>This add-on depends on <a href="../vpc-cni/">VPC CNI</a> Add-on for cni support.</li>
 </ol>
 <p><strong><em>VPC CNI add-on must be present in add-on array</em></strong> and <strong><em>must be in add-on array before the Karpenter add-on</em></strong> for it to work, as shown in below example. Otherwise will run into error <code>Assertion failed: Missing a dependency for VpcCniAddOn</code>.</p>
 <ol>
-<li>There is no support for utilizing both Cluster Autoscaler <strong>and</strong> Karpenter. Therefore, any addons list that has both will result in an error <code>Deploying &lt;name of your stack&gt; failed due to conflicting add-on: ClusterAutoscalerAddOn.</code>.</li>
-</ol>
-<h2 id="prerequisite">Prerequisite<a class="headerlink" href="#prerequisite" title="Permanent link">&para;</a></h2>
+<li>
+<p>There is no support for utilizing both Cluster Autoscaler <strong>and</strong> Karpenter. Therefore, any addons list that has both will result in an error <code>Deploying &lt;name of your stack&gt; failed due to conflicting add-on: ClusterAutoscalerAddOn.</code>.</p>
+</li>
+<li>
 <p>(If using Spot), EC2 Spot Service Linked Role should be created. See <a href="https://docs.aws.amazon.com/batch/latest/userguide/spot_fleet_IAM_role.html">here</a> for more details.</p>
+</li>
+</ol>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="s1">&#39;source-map-support/register&#39;</span><span class="p">;</span>
-<span class="k">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">cdk</span> <span class="k">from</span> <span class="s1">&#39;aws-cdk-lib&#39;</span><span class="p">;</span>
-<span class="k">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">blueprints</span> <span class="k">from</span> <span class="s1">&#39;@aws-quickstart/eks-blueprints&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="s1">&#39;source-map-support/register&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">cdk</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;aws-cdk-lib&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">blueprints</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@aws-quickstart/eks-blueprints&#39;</span><span class="p">;</span><span class="w"></span>
 
-<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">cdk</span><span class="p">.</span><span class="nx">App</span><span class="p">();</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">cdk</span><span class="p">.</span><span class="nx">App</span><span class="p">();</span><span class="w"></span>
 
-<span class="kd">const</span> <span class="nx">karpenterAddonProps</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="nx">provisionerSpecs</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s1">&#39;node.kubernetes.io/instance-type&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;m5.2xlarge&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;topology.kubernetes.io/zone&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;us-east-1c&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;kubernetes.io/arch&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;amd64&#39;</span><span class="p">,</span><span class="s1">&#39;arm64&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;karpenter.sh/capacity-type&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;spot&#39;</span><span class="p">,</span><span class="s1">&#39;on-demand&#39;</span><span class="p">],</span>
-  <span class="p">},</span>
-  <span class="nx">subnetTags</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;blueprint-construct-dev/blueprint-construct-dev-vpc/PrivateSubnet1&quot;</span><span class="p">,</span>
-  <span class="p">},</span>
-  <span class="nx">securityGroupTags</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;kubernetes.io/cluster/blueprint-construct-dev&quot;</span><span class="o">:</span> <span class="s2">&quot;owned&quot;</span><span class="p">,</span>
-  <span class="p">},</span>
-  <span class="nx">taints</span><span class="o">:</span> <span class="p">[{</span>
-    <span class="nx">key</span><span class="o">:</span> <span class="s2">&quot;workload&quot;</span><span class="p">,</span>
-    <span class="nx">value</span><span class="o">:</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span>
-    <span class="nx">effect</span><span class="o">:</span> <span class="s2">&quot;NoSchedule&quot;</span><span class="p">,</span>
-  <span class="p">}],</span>
-  <span class="nx">amiFamily</span><span class="o">:</span> <span class="s2">&quot;AL2&quot;</span><span class="p">,</span>
-<span class="p">}</span>
-<span class="kd">const</span> <span class="nx">vpcCniAddOn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">blueprints</span><span class="p">.</span><span class="nx">addons</span><span class="p">.</span><span class="nx">VpcCniAddOn</span><span class="p">();</span>
-<span class="kd">const</span> <span class="nx">karpenterAddOn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">blueprints</span><span class="p">.</span><span class="nx">addons</span><span class="p">.</span><span class="nx">KarpenterAddOn</span><span class="p">(</span><span class="nx">karpenterAddonProps</span><span class="p">);</span>
-<span class="kd">const</span> <span class="nx">addOns</span>: <span class="kt">Array</span><span class="o">&lt;</span><span class="nx">blueprints</span><span class="p">.</span><span class="nx">ClusterAddOn</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[</span> <span class="nx">vpcCniAddOn</span><span class="p">,</span> <span class="nx">karpenterAddOn</span> <span class="p">];</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">karpenterAddonProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nx">requirements</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;node.kubernetes.io/instance-type&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">op</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;In&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">vals</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;m5.2xlarge&#39;</span><span class="p">]</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;topology.kubernetes.io/zone&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">op</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;NotIn&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">vals</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;us-west-2c&#39;</span><span class="p">]},</span><span class="w"></span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;kubernetes.io/arch&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">op</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;In&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">vals</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;amd64&#39;</span><span class="p">,</span><span class="s1">&#39;arm64&#39;</span><span class="p">]},</span><span class="w"></span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;karpenter.sh/capacity-type&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">op</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;In&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">vals</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;spot&#39;</span><span class="p">,</span><span class="s1">&#39;on-demand&#39;</span><span class="p">]},</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nx">subnetTags</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;blueprint-construct-dev/blueprint-construct-dev-vpc/PrivateSubnet1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nx">securityGroupTags</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;kubernetes.io/cluster/blueprint-construct-dev&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;owned&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nx">taints</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;workload&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">effect</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;NoSchedule&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="p">}],</span><span class="w"></span>
+<span class="w">  </span><span class="nx">amiFamily</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AL2&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nx">consolidation</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">enabled</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nx">weight</span><span class="o">:</span><span class="w"> </span><span class="kt">20</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">vpcCniAddOn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">blueprints</span><span class="p">.</span><span class="nx">addons</span><span class="p">.</span><span class="nx">VpcCniAddOn</span><span class="p">();</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">karpenterAddOn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">blueprints</span><span class="p">.</span><span class="nx">addons</span><span class="p">.</span><span class="nx">KarpenterAddOn</span><span class="p">(</span><span class="nx">karpenterAddonProps</span><span class="p">);</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">addOns</span><span class="o">:</span><span class="w"> </span><span class="kt">Array</span><span class="o">&lt;</span><span class="nx">blueprints</span><span class="p">.</span><span class="nx">ClusterAddOn</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="nx">vpcCniAddOn</span><span class="p">,</span><span class="w"> </span><span class="nx">karpenterAddOn</span><span class="w"> </span><span class="p">];</span><span class="w"></span>
 
-<span class="kd">const</span> <span class="nx">blueprint</span> <span class="o">=</span> <span class="nx">blueprints</span><span class="p">.</span><span class="nx">EksBlueprint</span><span class="p">.</span><span class="nx">builder</span><span class="p">()</span>
-  <span class="p">.</span><span class="nx">addOns</span><span class="p">(...</span><span class="nx">addOns</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">build</span><span class="p">(</span><span class="nx">app</span><span class="p">,</span> <span class="s1">&#39;my-stack-name&#39;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">blueprint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">blueprints</span><span class="p">.</span><span class="nx">EksBlueprint</span><span class="p">.</span><span class="nx">builder</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="p">.</span><span class="nx">addOns</span><span class="p">(...</span><span class="nx">addOns</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">.</span><span class="nx">build</span><span class="p">(</span><span class="nx">app</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;my-stack-name&#39;</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>The add-on automatically sets the following Helm Chart <a href="https://github.com/aws/karpenter/tree/main/charts/karpenter#values">values</a>, and it is <strong>highly recommended</strong> not to pass these values in (as it will result in errors):
 - aws.defaultInstanceProfile
@@ -1137,29 +1297,18 @@ blueprints-addon-karpenter-54fd978b89-hclmp   <span class="m">2</span>/2     Run
 </ol>
 <p><strong>NOTE:</strong>
 1. The default provisioner is created only if both the subnet tags and the security group tags are provided.
-2. Provisioner spec requirement fields are not necessary, as karpenter will dynamically choose (i.e. leaving instance-type blank will let karpenter choose approrpriate sizing).</p>
+2. Provisioner spec requirement fields are not necessary, as karpenter will dynamically choose (i.e. leaving instance-type blank will let karpenter choose approrpriate sizing).
+3. Consolidation, which is a flag that enables , is supported on versions 0.15.0 and later. It is also mutually exclusive with <code>ttlSecondsAfterempty</code>, so if you provide both properties, the addon will throw an error.
+4. Weight, which is a property to prioritize provisioners based on weight, is supported on versions 0.16.0 and later. Addon will throw an error if weight is provided for earlier versions.</p>
 <h2 id="using-karpenter">Using Karpenter<a class="headerlink" href="#using-karpenter" title="Permanent link">&para;</a></h2>
 <p>To use Karpenter, you need to provision a Karpenter <a href="https://karpenter.sh/docs/provisioner/">provisioner CRD</a>. A single provisioner is capable of handling many different pod shapes.</p>
 <p>This can be done in 2 ways:</p>
 <ol>
-<li>Provide the following: Subnet tags and Security Group tags.</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">subnetTags</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;blueprint-construct-dev/blueprint-construct-dev-vpc/PrivateSubnet1&quot;</span><span class="p">,</span>
-<span class="p">}</span>
-
-<span class="kd">const</span> <span class="nx">sgTags</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">&quot;kubernetes.io/cluster/blueprint-construct-dev&quot;</span><span class="o">:</span> <span class="s2">&quot;owned&quot;</span><span class="p">,</span>
-<span class="p">}</span>
-
-<span class="kd">const</span> <span class="nx">karpenterAddOn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">blueprints</span><span class="p">.</span><span class="nx">addons</span><span class="p">.</span><span class="nx">KarpenterAddOn</span><span class="p">({</span>
-  <span class="nx">subnetTags</span>: <span class="kt">subnetTags</span><span class="p">,</span>
-  <span class="nx">securityGroupTags</span>: <span class="kt">sgTags</span><span class="p">,</span>
-<span class="p">});</span>
-</code></pre></div>
-<p>If either of the tags are not provided at deploy time, the add-on will be installed without a Provisioner.</p>
-<ol>
-<li>Use <code>kubectl</code> to apply a sample provisioner manifest:
+<li>
+<p>Provide the properties as show in <a href="#usage">Usage</a>. If subnet tags and security group tags are not provided at deploy time, the add-on will be installed without a Provisioner.</p>
+</li>
+<li>
+<p>Use <code>kubectl</code> to apply a sample provisioner manifest:
 <div class="highlight"><pre><span></span><code>cat <span class="s">&lt;&lt;EOF | kubectl apply -f -</span>
 <span class="s">apiVersion: karpenter.sh/v1alpha5</span>
 <span class="s">kind: Provisioner</span>
@@ -1187,7 +1336,8 @@ blueprints-addon-karpenter-54fd978b89-hclmp   <span class="m">2</span>/2     Run
 <span class="s">      &quot;kubernetes.io/cluster/blueprint-construct-dev&quot;: &quot;owned&quot;</span>
 <span class="s">  ttlSecondsAfterEmpty: 30</span>
 <span class="s">EOF</span>
-</code></pre></div></li>
+</code></pre></div></p>
+</li>
 </ol>
 <p>If you choose to create a provisioner manually, you <strong>MUST</strong> provide the tags that match the subnet and the security group that you want to use.</p>
 <h2 id="testing-with-a-sample-deployment">Testing with a sample deployment<a class="headerlink" href="#testing-with-a-sample-deployment" title="Permanent link">&para;</a></h2>
@@ -1230,40 +1380,66 @@ blueprints-addon-karpenter-54fd978b89-hclmp   <span class="m">2</span>/2     Run
 <ol>
 <li>For Karpenter version older than <code>0.14.0</code> deployed on Fargate Profiles, <code>values.yaml</code> must be overridden, setting <code>dnsPolicy</code> to <code>Default</code>. Versions after <code>0.14.0</code> has <code>dnsPolicy</code> value set default to <code>Default</code>. This is to ensure CoreDNS is set correctly on Fargate nodes.</li>
 </ol>
-                
-              
-              
-                
+<h2 id="upgrade-path">Upgrade Path<a class="headerlink" href="#upgrade-path" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Using an older version of the Karptner add-on, you may notice the difference in the "provisionerSpecs" property:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>provisionerSpecs: {
+    &#39;node.kubernetes.io/instance-type&#39;: [&#39;m5.2xlarge&#39;],
+    &#39;topology.kubernetes.io/zone&#39;: [&#39;us-east-1c&#39;],
+    &#39;kubernetes.io/arch&#39;: [&#39;amd64&#39;,&#39;arm64&#39;],
+    &#39;karpenter.sh/capacity-type&#39;: [&#39;spot&#39;,&#39;on-demand&#39;],
+  },
+</code></pre></div>
+<p>This now changes to the "requirement" property:</p>
+<div class="highlight"><pre><span></span><code>requirements: [
+      { key: &#39;node.kubernetes.io/instance-type&#39;, op: &#39;In&#39;, vals: [&#39;m5.2xlarge&#39;] },
+      { key: &#39;topology.kubernetes.io/zone&#39;, op: &#39;NotIn&#39;, vals: [&#39;us-west-2c&#39;]},
+      { key: &#39;kubernetes.io/arch&#39;, op: &#39;In&#39;, vals: [&#39;amd64&#39;,&#39;arm64&#39;]},
+      { key: &#39;karpenter.sh/capacity-type&#39;, op: &#39;In&#39;, vals: [&#39;spot&#39;,&#39;on-demand&#39;]},
+  ],
+</code></pre></div>
+<p>The property is changed to align with the naming convention of the provisioner, and to allow multiple operators (In vs NotIn). The values correspond similarly between the two, with type change being the only difference.</p>
+<ol>
+<li>Certain upgrades require reapplying the CRDs since Helm does not maintain the lifecycle of CRDs. Please see the <a href="https://karpenter.sh/v0.16.0/upgrade-guide/#custom-resource-definition-crd-upgrades">official documentations</a> for details.</li>
+</ol>
 
 
-              
-            </article>
-          </div>
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
-        <a href="../external-dns/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../jupyterhub/" class="md-footer__link md-footer__link--prev" aria-label="Previous: JupyterHub" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Previous
               </span>
-              External DNS
+              JupyterHub
             </div>
           </div>
         </a>
       
       
-        <a href="../kube-proxy/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../kube-proxy/" class="md-footer__link md-footer__link--next" aria-label="Next: Kube Proxy" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -1273,7 +1449,7 @@ blueprints-addon-karpenter-54fd978b89-hclmp   <span class="m">2</span>/2     Run
             </div>
           </div>
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
           </div>
         </a>
       
@@ -1281,14 +1457,15 @@ blueprints-addon-karpenter-54fd978b89-hclmp   <span class="m">2</span>/2     Run
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -1298,10 +1475,11 @@ blueprints-addon-karpenter-54fd978b89-hclmp   <span class="m">2</span>/2     Run
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.37e9125f.min.js"></script>
       
     
   </body>

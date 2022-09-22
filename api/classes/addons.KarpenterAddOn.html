@@ -24,7 +24,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">KarpenterAddOn</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/8def083/lib/addons/karpenter/index.ts#L69">lib/addons/karpenter/index.ts:69</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/e2e0274/lib/addons/karpenter/index.ts#L92">lib/addons/karpenter/index.ts:92</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -44,7 +44,7 @@
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
 <div class="tsd-index-list"><a href="addons.KarpenterAddOn.html#addHelmChart" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>add<wbr/>Helm<wbr/>Chart</span></a>
-<a href="addons.KarpenterAddOn.html#convertToSpec" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-protected"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>convert<wbr/>To<wbr/>Spec</span></a>
+<a href="addons.KarpenterAddOn.html#convert" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-protected"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>convert</span></a>
 <a href="addons.KarpenterAddOn.html#deploy" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>deploy</span></a>
 <a href="addons.KarpenterAddOn.html#validateVersion" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>validate<wbr/>Version</span></a>
 </div></section></div></details></section></section>
@@ -63,32 +63,32 @@
 <h4 class="tsd-returns-title">Returns <a href="../modules/addons.html" class="tsd-signature-type" data-tsd-kind="Namespace">addons</a><span class="tsd-signature-symbol">.</span><a href="addons.KarpenterAddOn.html" class="tsd-signature-type" data-tsd-kind="Class">KarpenterAddOn</a></h4><aside class="tsd-sources">
 <p>Overrides <a href="addons.HelmAddOn.html">HelmAddOn</a>.<a href="addons.HelmAddOn.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/8def083/lib/addons/karpenter/index.ts#L73">lib/addons/karpenter/index.ts:73</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/e2e0274/lib/addons/karpenter/index.ts#L96">lib/addons/karpenter/index.ts:96</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="options" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>options</span><a href="#options" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">KarpenterAddOnProps</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/8def083/lib/addons/karpenter/index.ts#L71">lib/addons/karpenter/index.ts:71</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/e2e0274/lib/addons/karpenter/index.ts#L94">lib/addons/karpenter/index.ts:94</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="props" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>props</span><a href="#props" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HelmChartConfiguration</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="addons.HelmAddOn.html">HelmAddOn</a>.<a href="addons.HelmAddOn.html#props">props</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/8def083/lib/addons/helm-addon/index.ts#L51">lib/addons/helm-addon/index.ts:51</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/e2e0274/lib/addons/helm-addon/index.ts#L51">lib/addons/helm-addon/index.ts:51</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="failOnVersionValidation" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>fail<wbr/>On<wbr/>Version<wbr/>Validation</span><a href="#failOnVersionValidation" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">fail<wbr/>On<wbr/>Version<wbr/>Validation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="addons.HelmAddOn.html">HelmAddOn</a>.<a href="addons.HelmAddOn.html#failOnVersionValidation">failOnVersionValidation</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/8def083/lib/addons/helm-addon/index.ts#L54">lib/addons/helm-addon/index.ts:54</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/e2e0274/lib/addons/helm-addon/index.ts#L54">lib/addons/helm-addon/index.ts:54</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="validateHelmVersions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>validate<wbr/>Helm<wbr/>Versions</span><a href="#validateHelmVersions" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">validate<wbr/>Helm<wbr/>Versions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="addons.HelmAddOn.html">HelmAddOn</a>.<a href="addons.HelmAddOn.html#validateHelmVersions">validateHelmVersions</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/8def083/lib/addons/helm-addon/index.ts#L53">lib/addons/helm-addon/index.ts:53</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/e2e0274/lib/addons/helm-addon/index.ts#L53">lib/addons/helm-addon/index.ts:53</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-inherited"><a id="addHelmChart" class="tsd-anchor"></a>
@@ -115,27 +115,24 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Construct</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="addons.HelmAddOn.html">HelmAddOn</a>.<a href="addons.HelmAddOn.html#addHelmChart">addHelmChart</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/8def083/lib/addons/helm-addon/index.ts#L88">lib/addons/helm-addon/index.ts:88</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a id="convertToSpec" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>convert<wbr/>To<wbr/>Spec</span><a href="#convertToSpec" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/e2e0274/lib/addons/helm-addon/index.ts#L88">lib/addons/helm-addon/index.ts:88</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a id="convert" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>convert</span><a href="#convert" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-<li class="tsd-signature tsd-anchor-link" id="convertToSpec.convertToSpec-1">convert<wbr/>To<wbr/>Spec<span class="tsd-signature-symbol">(</span>specs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>[key: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><a href="#convertToSpec.convertToSpec-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="convert.convert-1">convert<span class="tsd-signature-symbol">(</span>reqs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>op<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>vals<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><a href="#convert.convert-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Helper function to convert a key-pair values of provisioner spec configurations
-To appropriate json format for addManifest function</p>
+<div class="tsd-comment tsd-typography"><p>Helper function to convert a key-pair values (with an operator) 
+of spec configurations to appropriate json format for addManifest function</p>
 
 <h3>Returns</h3></div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>specs: <span class="tsd-signature-symbol">{ </span>[key: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h5>
-<ul class="tsd-parameters">
-<li class="tsd-parameter-index-signature">
-<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></li></ul></div>
+<h5>reqs: <span class="tsd-signature-symbol">{ </span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>op<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>vals<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/8def083/lib/addons/karpenter/index.ts#L174">lib/addons/karpenter/index.ts:174</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/e2e0274/lib/addons/karpenter/index.ts#L215">lib/addons/karpenter/index.ts:215</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="deploy" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>deploy</span><a href="#deploy" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -151,7 +148,7 @@ To appropriate json format for addManifest function</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Construct</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="addons.HelmAddOn.html">HelmAddOn</a>.<a href="addons.HelmAddOn.html#deploy">deploy</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/8def083/lib/addons/karpenter/index.ts#L78">lib/addons/karpenter/index.ts:78</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/e2e0274/lib/addons/karpenter/index.ts#L101">lib/addons/karpenter/index.ts:101</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a id="validateVersion" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>validate<wbr/>Version</span><a href="#validateVersion" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -165,7 +162,7 @@ To appropriate json format for addManifest function</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="addons.HelmAddOn.html">HelmAddOn</a>.<a href="addons.HelmAddOn.html#validateVersion">validateVersion</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/8def083/lib/addons/helm-addon/index.ts#L62">lib/addons/helm-addon/index.ts:62</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/aws-quickstart/ssp-amazon-eks/blob/e2e0274/lib/addons/helm-addon/index.ts#L62">lib/addons/helm-addon/index.ts:62</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -206,7 +203,7 @@ To appropriate json format for addManifest function</p>
 <li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="addons.KarpenterAddOn.html#failOnVersionValidation" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>fail<wbr/>On<wbr/>Version<wbr/>Validation</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="addons.KarpenterAddOn.html#validateHelmVersions" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>validate<wbr/>Helm<wbr/>Versions</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-inherited"><a href="addons.KarpenterAddOn.html#addHelmChart" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>add<wbr/>Helm<wbr/>Chart</a></li>
-<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="addons.KarpenterAddOn.html#convertToSpec" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>convert<wbr/>To<wbr/>Spec</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="addons.KarpenterAddOn.html#convert" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>convert</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="addons.KarpenterAddOn.html#deploy" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>deploy</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="addons.KarpenterAddOn.html#validateVersion" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>validate<wbr/>Version</a></li></ul></li></ul></nav></div></div>
 <div class="container tsd-generator">
