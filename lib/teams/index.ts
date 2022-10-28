@@ -415,18 +415,22 @@ export class EmrEksTeam extends ApplicationTeam {
 
   private setEmrContainersForNamespace(cluster: Cluster, namespace: string, createNamespace: boolean): KubernetesManifest {
 
+    //Get the Role definition and add the namespace of the EMR on EKS virtual cluster
     let emrContainersK8sRole = readYamlDocument(`${__dirname}/emrContainersRole.yaml`);
     emrContainersK8sRole = emrContainersK8sRole.replace('<REPLACE-NAMESPACE>', namespace);
     const emrContainersK8sRoleManifest = loadYaml(emrContainersK8sRole);
 
+    //Create the role used by EMR on EKS
     const emrContainersK8sRoleResource = cluster.addManifest('emrContainersK8sRoleManifest',
       emrContainersK8sRoleManifest
     );
 
+    //Get the RoleBinding definition and add the namespace of the EMR on EKS virtual cluster  
     let emrContainersK8sRoleBinding = readYamlDocument(`${__dirname}/emrContainersRoleBinding.yaml`);
     emrContainersK8sRoleBinding = emrContainersK8sRoleBinding.replace('<REPLACE-NAMESPACE>', namespace);
     const emrContainersK8sRoleBindingManifest = loadYaml(emrContainersK8sRoleBinding);
 
+    //Create the role binding between the service account and the role to be used by EMR on EKS
     const emrContainersK8sRoleBindingResource = cluster.addManifest('emrContainersK8sRoleBindingManifest',
       emrContainersK8sRoleBindingManifest
     );
