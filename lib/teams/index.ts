@@ -346,6 +346,7 @@ export interface EmrEksTeamProps extends TeamProps {
  *The class will create an EMR on EKS Virtual Cluster to use by the team
  *It can either create a namespace or use an existing one
  *The class will set the necessary k8s RBAC needed by EMR on EKS as defined in the AWS documentation 
+ * https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/setting-up-cluster-access.html
  * The class constructor take a the EMR on EKS Team definition
  */
 
